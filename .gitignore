@@ -1,0 +1,45 @@
+# Build
+**/bin/
+**/obj/
+**/out/
+
+# .NET
+*.user
+*.suo
+.vs/
+*.cache
+*.nuget
+project.assets.json
+*.AssemblyInfo.cs
+*.AssemblyInfoInputs.cache
+*.GeneratedMSBuildEditorConfig.cache
+*.GlobalUsings.g.cs
+*.MvcApplicationPartsAssemblyInfo.cs
+*.sourcelink.json
+*.FileListAbsolute.txt
+*.CoreCompileInputs.cache
+*.AssemblyReference.cache
+rpswa.dswa.cache.json
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+nuget.config
+*.nuget.dgspec.json
+*.nuget.g.props
+*.nuget.g.targets
+
+# Angular
+**/node_modules/
+**/.angular/
+**/dist/
+
+# IDE
+.vscode/
+.idea/
+*.sln.docstates
+
+# OS
+.DS_Store
+Thumbs.db
