@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BxlQkhRgF6g=",
+  "success": true,
+  "projectFilePath": "/home/paula-aragones/Documents/inventario-ccl/backend/InventarioCCL/InventarioCCL.csproj",
+  "expectedPackageFiles": [
+    "/home/paula-aragones/.nuget/packages/bcrypt.net-next/4.1.0/bcrypt.net-next.4.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
