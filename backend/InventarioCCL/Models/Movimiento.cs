@@ -7,6 +7,6 @@ public class Movimiento
     public Producto? Producto { get; set; }
     public string Tipo { get; set; } = string.Empty; // entrada | salida
     public int Cantidad { get; set; }
-    public DateTime Fecha { get; set; } = DateTime.Now;
+    public DateTime Fecha { get; set; } = DateTime.UtcNow;
     public string? Observacion { get; set; }
 }

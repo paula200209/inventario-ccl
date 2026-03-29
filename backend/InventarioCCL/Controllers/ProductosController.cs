@@ -54,7 +54,7 @@ public class ProductosController : ControllerBase
             Tipo = dto.Tipo,
             Cantidad = dto.Cantidad,
             Observacion = dto.Observacion,
-            Fecha = DateTime.Now
+            Fecha = DateTime.UtcNow
         };
 
         _context.Movimientos.Add(movimiento);
