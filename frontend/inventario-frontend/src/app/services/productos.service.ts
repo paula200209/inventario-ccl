@@ -7,7 +7,7 @@ import { AuthService } from './auth.service';
   providedIn: 'root'
 })
 export class ProductosService {
-  private apiUrl = 'http://localhost:5000/productos';
+  private apiUrl = 'http://localhost:5082/productos';
 
   constructor(private http: HttpClient, private authService: AuthService) {}
 
