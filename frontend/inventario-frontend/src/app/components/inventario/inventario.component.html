@@ -1,0 +1,41 @@
+<div class="inventario-container">
+  <div class="header">
+    <h2>Inventario de Pijamas — CCL</h2>
+    <div class="header-actions">
+      <button class="btn-movimiento" (click)="irAMovimiento()">+ Registrar movimiento</button>
+      <button class="btn-salir" (click)="cerrarSesion()">Cerrar sesión</button>
+    </div>
+  </div>
+
+  <div class="loading" *ngIf="cargando">Cargando inventario...</div>
+  <div class="error-msg" *ngIf="error">{{ error }}</div>
+
+  <div class="tabla-wrapper" *ngIf="!cargando && !error">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let producto of productos; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ producto.nombre }}</td>
+          <td>{{ formatearPrecio(producto.precio) }}</td>
+          <td>{{ producto.cantidad }}</td>
+          <td>
+            <span class="badge" [class.badge-ok]="producto.cantidad > 0" [class.badge-vacio]="producto.cantidad === 0">
+              {{ producto.cantidad > 0 ? 'En stock' : 'Sin stock' }}
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="btn-refresh" (click)="cargarInventario()">Actualizar</button>
+  </div>
+</div>
